@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 function Profile({ username, tag, location, avatar, stats }) {
     return (
@@ -37,6 +37,6 @@ Profile.propTypes = {
     location: PropTypes.string,
     avatar: PropTypes.string,
     stats: PropTypes.object,
-}
+};
 
 export default Profile;
