@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import TransactionHistoryItem from '../TransactionHistoryItem/TransactionHistoryItem'
+import s from './TransactionHistory.module.css'
 
 function TransactionHistory({items}) {
     return (
-        <table class="transaction-history">
+        <table className={s.transactionHistory}>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -12,14 +12,15 @@ function TransactionHistory({items}) {
                 </tr>
             </thead>
             <tbody>
-                {items.map(item => (
-                    <TransactionHistoryItem
-                        key={item.id}
-                        type={item.type}
-                        amount={item.amount}
-                        currency={item.amount}
-                    />
-                ))}
+                {items.map(({ id, type, amount, currency }, idx) => {
+                    let color;
+                    idx % 2 === 0 ? color = "rgb(255, 255, 255)" : color = "rgb(0, 228, 228, 0.25)" ;
+                    return  <tr key={id} style={{ backgroundColor: color, }}>
+                                <td>{type}</td>
+                                <td>{amount}</td>
+                                <td>{currency}</td>
+                            </tr>
+                })}
             </tbody>
         </table>
     );
