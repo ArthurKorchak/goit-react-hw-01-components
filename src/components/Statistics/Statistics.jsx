@@ -6,7 +6,7 @@ const colors = { 22: 'red', 4: 'blue', 17: 'green', 47: 'gray', 10: 'brown' }
 function Statistics({title, stats}) {
     return (
         <section className={s.statistics}>
-            <h2 className={s.title}>{title}</h2>
+            {title ? <h2 className={s.title}>{title}</h2> : null}
             <ul className={s.statList}>
                 {stats.map(({id, label, percentage}) => (
                     <li className={s.item} key={id} style={{backgroundColor: colors[percentage],}}>
@@ -20,8 +20,14 @@ function Statistics({title, stats}) {
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.array,
+    title: PropTypes.string.isRequired,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
+        }),
+    ),
 };
 
 export default Statistics;
