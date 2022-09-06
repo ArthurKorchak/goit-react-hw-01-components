@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ArthurKorchak/goit-react-hw-01-components.git/static/css/main.3c0c9886.css",
-    "main.js": "/ArthurKorchak/goit-react-hw-01-components.git/static/js/main.7e4ba0ae.js",
-    "index.html": "/ArthurKorchak/goit-react-hw-01-components.git/index.html",
-    "main.3c0c9886.css.map": "/ArthurKorchak/goit-react-hw-01-components.git/static/css/main.3c0c9886.css.map",
-    "main.7e4ba0ae.js.map": "/ArthurKorchak/goit-react-hw-01-components.git/static/js/main.7e4ba0ae.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.3c0c9886.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.46a5af78.js",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.3c0c9886.css.map": "/goit-react-hw-01-components/static/css/main.3c0c9886.css.map",
+    "main.46a5af78.js.map": "/goit-react-hw-01-components/static/js/main.46a5af78.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0c9886.css",
-    "static/js/main.7e4ba0ae.js"
+    "static/js/main.46a5af78.js"
   ]
 }
